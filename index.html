@@ -1,0 +1,995 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGION BETON Zavod | Toshkentda va O'zbekistonda Beton Sotib Olish (B7,5 - B60)</title>
+    <meta name="description" content="REGION BETON — Toshkentda va O'zbekistonda 6 ta avtomatlashtirilgan zavodlar tarmog'i. Yuqori sifatli tayyor beton, tovar, yo'l, suvga chidamli va peskobeton yetkazib berish bilan." />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230284c7'/><path d='M25 25h50v15H25zM25 45h50v15H25zM25 65h50v15H25z' fill='%2310b981'/></svg>" />
+  </head>
+  <body>
+    <!-- Top Announcement & Contact Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <div class="top-bar-left">
+          <span class="pulse-dot"></span>
+          <span><strong>REGION BETON</strong> — 6 ta avtomatlashtirilgan zavodimiz 24/7 rejimida uzluksiz ishlamoqda</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="tel:+998712007070" class="top-phone">
+            <i data-lucide="phone-call"></i>
+            +998 (71) 200-70-70
+          </a>
+          <div class="lang-selector">
+            <a href="#" class="lang-link active">UZ</a>
+            <a href="#" class="lang-link">RU</a>
+            <a href="#" class="lang-link">EN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="index.html" class="logo-brand">
+          <img src="/logo_brand.png" alt="REGION BETON Logo" class="header-logo-img">
+        </a>
+
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html" class="nav-link active">Bosh sahifa</a>
+          <a href="about.html" class="nav-link">Biz haqimizda</a>
+          <a href="products.html" class="nav-link">Mahsulotlar</a>
+          <a href="calculator.html" class="nav-link">Kalkulyator</a>
+          <a href="factories.html" class="nav-link">Zavodlar</a>
+          <a href="laboratory.html" class="nav-link">Laboratoriya</a>
+          <a href="projects.html" class="nav-link">Loyihalar</a>
+          <a href="contacts.html" class="nav-link">Kontaktlar</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="btn btn-brand" id="openCallbackModal">
+            <i data-lucide="phone-outgoing"></i>
+            <span>Qo'ng'iroqqa buyurtma</span>
+          </button>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Menuni ochish">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section with Left Text & Right Tablet Showcase -->
+    <section class="hero-section">
+      <div class="container container-wide">
+        <div class="hero-grid-2col">
+          <!-- Left Column: Text & CTA -->
+          <div class="hero-content-left">
+            <div class="hero-badge">
+              <i data-lucide="shield-check"></i>
+              <span>2015-YILDAN BERI ISHONCHLI HAMKOR</span>
+            </div>
+
+            <h1 class="hero-title">
+              Mustahkam poydevor sifatli betondan boshlanadi <span class="gradient-text">Region Beton</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Har qanday hajmdagi qurilish uchun kafolatlangan sifat va o'z vaqtida yetkazib berish
+            </p>
+
+            <div class="hero-buttons">
+              <a href="calculator.html" class="btn btn-brand btn-lg">
+                <i data-lucide="calculator"></i>
+                <span>Kalkulyator & Narxni Hisoblash</span>
+              </a>
+              <a href="factories.html" class="btn btn-outline btn-lg">
+                <i data-lucide="factory"></i>
+                <span>Zavodlarimiz Bilan Tanishish</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Clean Pure Image Showcase Frame (No overlays or text badges) -->
+          <div class="hero-showcase-wrapper">
+            <div class="hero-showcase-card">
+              <div class="showcase-slider" id="heroShowcaseSlider">
+                <div class="showcase-slide active">
+                  <img src="/hero_mixer.jpg" alt="Region Beton Avtomikser va Ishlab Chiqarish" class="showcase-screen-img">
+                </div>
+                <div class="showcase-slide">
+                  <img src="/factory_plant.jpg" alt="Avtomatlashtirilgan Beton Zavodi" class="showcase-screen-img">
+                </div>
+                <div class="showcase-slide">
+                  <img src="/mixer_fleet.jpg" alt="24/7 Uzluksiz Yetkazib Berish" class="showcase-screen-img">
+                </div>
+                <div class="showcase-slide">
+                  <img src="/laboratory.jpg" alt="Akkreditatsiyalangan Laboratoriya" class="showcase-screen-img">
+                </div>
+              </div>
+
+              <!-- Navigation Arrows for Slayder -->
+              <button class="showcase-nav-btn prev-btn" id="showcasePrev" aria-label="Oldingi rasm">
+                <i data-lucide="chevron-left"></i>
+              </button>
+              <button class="showcase-nav-btn next-btn" id="showcaseNext" aria-label="Keyingi rasm">
+                <i data-lucide="chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dedicated Statistics Bar Section (2-bo'lim) -->
+    <section class="stats-bar-section">
+      <div class="container container-wide">
+        <div class="hero-stats-grid">
+          <div class="hero-stat-card">
+            <div class="stat-icon"><i data-lucide="truck"></i></div>
+            <div class="stat-info">
+              <span class="stat-number" data-target="1100000">1 100 000+ m³</span>
+              <span class="stat-label">Yetkazib Berilgan Beton</span>
+            </div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="stat-icon"><i data-lucide="car"></i></div>
+            <div class="stat-info">
+              <span class="stat-number" data-target="120">120+</span>
+              <span class="stat-label">Avtomikser & Nasos Floti</span>
+            </div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="stat-icon"><i data-lucide="factory"></i></div>
+            <div class="stat-info">
+              <span class="stat-number" data-target="6">6 Ta</span>
+              <span class="stat-label">Avtomatlashtirilgan Zavodlar</span>
+            </div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="stat-icon"><i data-lucide="building-2"></i></div>
+            <div class="stat-info">
+              <span class="stat-number" data-target="1870">1 870+</span>
+              <span class="stat-label">Bajarilgan Yirik Obyektlar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners & Clients Infinite Ticker Marquee -->
+    <section class="partners-ticker-section">
+      <div class="ticker-header">
+        <span class="ticker-title">BIZ BILAN ISHLAYDIGAN YIRIK QURILISH VA INVESTITSIYA HAMKORLARIMIZ</span>
+      </div>
+      <div class="ticker-wrapper">
+        <div class="ticker-track">
+          <!-- Item 1 -->
+          <div class="partner-card">
+            <i data-lucide="building-2"></i>
+            <span>DISCOVER INVEST</span>
+          </div>
+          <!-- Item 2 -->
+          <div class="partner-card">
+            <i data-lucide="building"></i>
+            <span>NEST ONE</span>
+          </div>
+          <!-- Item 3 -->
+          <div class="partner-card">
+            <i data-lucide="box"></i>
+            <span>AKFA BUILD</span>
+          </div>
+          <!-- Item 4 -->
+          <div class="partner-card">
+            <i data-lucide="globe"></i>
+            <span>KOC CONSTRUCTION</span>
+          </div>
+          <!-- Item 5 -->
+          <div class="partner-card">
+            <i data-lucide="landmark"></i>
+            <span>XON SAROY</span>
+          </div>
+          <!-- Item 6 -->
+          <div class="partner-card">
+            <i data-lucide="castle"></i>
+            <span>MURAD BUILDINGS</span>
+          </div>
+          <!-- Item 7 -->
+          <div class="partner-card">
+            <i data-lucide="wrench"></i>
+            <span>ENTER ENGINEERING</span>
+          </div>
+          <!-- Item 8 -->
+          <div class="partner-card">
+            <i data-lucide="truck"></i>
+            <span>HYUNDAI AUTO</span>
+          </div>
+          <!-- Item 9 -->
+          <div class="partner-card">
+            <i data-lucide="shield-check"></i>
+            <span>GOLD STEP</span>
+          </div>
+          <!-- Item 10 -->
+          <div class="partner-card">
+            <i data-lucide="layers"></i>
+            <span>ORIENT GROUP</span>
+          </div>
+
+          <!-- Duplicated set for seamless loop -->
+          <div class="partner-card">
+            <i data-lucide="building-2"></i>
+            <span>DISCOVER INVEST</span>
+          </div>
+          <div class="partner-card">
+            <i data-lucide="building"></i>
+            <span>NEST ONE</span>
+          </div>
+          <div class="partner-card">
+            <i data-lucide="box"></i>
+            <span>AKFA BUILD</span>
+          </div>
+          <div class="partner-card">
+            <i data-lucide="globe"></i>
+            <span>KOC CONSTRUCTION</span>
+          </div>
+          <div class="partner-card">
+            <i data-lucide="landmark"></i>
+            <span>XON SAROY</span>
+          </div>
+          <div class="partner-card">
+            <i data-lucide="castle"></i>
+            <span>MURAD BUILDINGS</span>
+          </div>
+          <div class="partner-card">
+            <i data-lucide="wrench"></i>
+            <span>ENTER ENGINEERING</span>
+          </div>
+          <div class="partner-card">
+            <i data-lucide="truck"></i>
+            <span>HYUNDAI AUTO</span>
+          </div>
+          <div class="partner-card">
+            <i data-lucide="shield-check"></i>
+            <span>GOLD STEP</span>
+          </div>
+          <div class="partner-card">
+            <i data-lucide="layers"></i>
+            <span>ORIENT GROUP</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us & Company in Numbers (Full Section from Reference Screenshots) -->
+    <section class="dark-showcase-section" id="whyUs">
+      <div class="container container-wide">
+        <div class="dark-showcase-wrapper">
+          
+          <!-- Section 1 Header: Title, Subtitle & 3D Logo Badge -->
+          <div class="dark-section-header">
+            <div>
+              <h2 class="dark-header-title">
+                Bizni <span class="gold-gradient-text">aniqlik, sifat va ishonchlilik</span> uchun tanlashadi
+              </h2>
+              <p class="dark-header-desc">
+                Minglab obyektlar bizning betonimiz bilan qurilgan, chunki biz sifat uchun javob beramiz, jadvalga amal qilamiz va har bir bosqichda mijozni qo'llab quvvatlaymiz
+              </p>
+            </div>
+            
+            <div class="dark-header-3d-graphic">
+              <img src="/cubes/cube_m300.png" alt="Region Beton 3D Emblem" width="180" height="180" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Feature Cards Grid (6 cards) -->
+          <div class="dark-features-grid">
+            <div class="dark-feature-card">
+              <div class="dark-icon-box"><i data-lucide="flask-conical"></i></div>
+              <h3>Sifat nazorati</h3>
+              <p>O'z laboratoriyamiz mavjud. Har bir partiya GOST standarti bo'yicha sinovdan o'tadi</p>
+            </div>
+
+            <div class="dark-feature-card">
+              <div class="dark-icon-box"><i data-lucide="crosshair"></i></div>
+              <h3>Onlayn kuzatuv</h3>
+              <p>Buyurtmangiz qayerdaligini real vaqt rejimida ko'rasiz</p>
+            </div>
+
+            <div class="dark-feature-card">
+              <div class="dark-icon-box"><i data-lucide="factory"></i></div>
+              <h3>O'z ishlab chiqarishimiz</h3>
+              <p>Kuniga 5 000 m³ quvvatga ega 5 ta zavod. Yevropa uskunalari bilan jihozlangan</p>
+            </div>
+
+            <div class="dark-feature-card">
+              <div class="dark-icon-box"><i data-lucide="headset"></i></div>
+              <h3>ProfiProrab — qurilishda yordam</h3>
+              <p>Marka, hajm, jadval va quyish logistikasiga oid maslahatlar</p>
+            </div>
+
+            <div class="dark-feature-card">
+              <div class="dark-icon-box"><i data-lucide="timer"></i></div>
+              <h3>Aniq yetkazib berish</h3>
+              <p>O'z avtoparki va logistika markazi har doim o'z vaqtida yetib boramiz</p>
+            </div>
+
+            <div class="dark-feature-card">
+              <div class="dark-icon-box"><i data-lucide="handshake"></i></div>
+              <h3>Ortiqcha vositachilarsiz</h3>
+              <p>Barcha beton aralashmalari o'z ishlab chiqarishimizdan qo'shimcha narxsiz.</p>
+            </div>
+          </div>
+
+          <!-- Section 2: Kompaniyamiz raqamlarda -->
+          <div class="dark-stats-layout">
+            <div class="dark-stats-info">
+              <h2>Kompaniyamiz <br><span class="gold-gradient-text">raqamlarda</span></h2>
+              <p>Yillar davomida biz bebaho tajriba to'pladik bu muvaffaqiyatli natijaning kafolatidir</p>
+            </div>
+
+            <div class="dark-stats-cards-grid">
+              <div class="dark-stat-white-card">
+                <div class="dark-stat-val stat-number" data-target="1326">1 326+</div>
+                <div class="dark-stat-lbl">Bajarilgan buyurtmalar</div>
+              </div>
+
+              <div class="dark-stat-white-card">
+                <div class="dark-stat-val stat-number" data-target="780093">780 093</div>
+                <div class="dark-stat-lbl">Bir yilda ishlab chiqarilgan beton hajmi</div>
+              </div>
+
+              <div class="dark-stat-white-card">
+                <div class="dark-stat-val stat-number" data-target="173">173+</div>
+                <div class="dark-stat-lbl">Mahsulotlarni yetkazdik</div>
+              </div>
+
+              <div class="dark-stat-white-card">
+                <div class="dark-stat-val stat-number" data-target="79">79</div>
+                <div class="dark-stat-lbl">Avtoparkdagi maxsus texnikalar</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Concrete Grades Catalog (Mahsulotlar Katalogi) -->
+    <section class="section products-section" id="products" style="background: #f8fafc;">
+      <div class="container container-wide">
+        <div class="section-header text-center">
+          <span class="sub-title">MAHSULOTLAR KATALOGI</span>
+          <h2 class="section-title">Sertifikatlangan <span class="blue-text">Beton Markalari</span></h2>
+          <p class="section-subtitle">Aniq tarkib, barqaror sifat va obyektgacha yetkazib berish bilan barcha markadagi tayyor beton aralashmalari.</p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Card M100 -->
+          <div class="product-card">
+            <div>
+              <div class="prod-cube-img-wrapper">
+                <img src="/cubes/cube_m100.png" alt="Beton M100 3D Kubik" class="prod-cube-img">
+              </div>
+              <h3>Beton M100 (B7,5)</h3>
+              <p>Poydevor tagi, yo‘laklar, tayyorgarlik ishlari</p>
+            </div>
+            <div class="prod-actions-stacked">
+              <button class="btn-card-gold" data-open-modal data-grade="Beton M100 (B7.5)">1 klikda xarid qilish</button>
+              <button class="btn-secondary-light" data-open-detail="m100">Batafsil</button>
+            </div>
+          </div>
+
+          <!-- Card M150 -->
+          <div class="product-card">
+            <div>
+              <div class="prod-cube-img-wrapper">
+                <img src="/cubes/cube_m150.png" alt="Beton M150 3D Kubik" class="prod-cube-img">
+              </div>
+              <h3>Beton M150 (B12.5)</h3>
+              <p>Qoplama, yo‘laklar, maydonchalar, tayyorlov va xomaki ishlar</p>
+            </div>
+            <div class="prod-actions-stacked">
+              <button class="btn-card-gold" data-open-modal data-grade="Beton M150 (B12.5)">1 klikda xarid qilish</button>
+              <button class="btn-secondary-light" data-open-detail="m150">Batafsil</button>
+            </div>
+          </div>
+
+          <!-- Card M200 -->
+          <div class="product-card">
+            <div>
+              <div class="prod-cube-img-wrapper">
+                <img src="/cubes/cube_m200.png" alt="Beton M200 3D Kubik" class="prod-cube-img">
+              </div>
+              <h3>Beton M200 (B15)</h3>
+              <p>Poydevorlar, pollar, zinapoyalar, maydonchalar, yo‘l va qurilish ishlari</p>
+            </div>
+            <div class="prod-actions-stacked">
+              <button class="btn-card-gold" data-open-modal data-grade="Beton M200 (B15)">1 klikda xarid qilish</button>
+              <button class="btn-secondary-light" data-open-detail="m200">Batafsil</button>
+            </div>
+          </div>
+
+          <!-- Card M250 -->
+          <div class="product-card">
+            <div>
+              <div class="prod-cube-img-wrapper">
+                <img src="/cubes/cube_m250.png" alt="Beton M250 3D Kubik" class="prod-cube-img">
+              </div>
+              <h3>Beton M250 (B20)</h3>
+              <p>Poydevorlar, yopmalar, yo‘laklar, maydonchalar</p>
+            </div>
+            <div class="prod-actions-stacked">
+              <button class="btn-card-gold" data-open-modal data-grade="Beton M250 (B20)">1 klikda xarid qilish</button>
+              <button class="btn-secondary-light" data-open-detail="m250">Batafsil</button>
+            </div>
+          </div>
+
+          <!-- Card M300 -->
+          <div class="product-card">
+            <div>
+              <div class="prod-cube-img-wrapper">
+                <img src="/cubes/cube_m300.png" alt="Beton M300 3D Kubik" class="prod-cube-img">
+              </div>
+              <h3>Beton M300 (B22,5)</h3>
+              <p>Poydevorlar, ustunlar, zinapoyalar va yuk ko‘taruvchi konstruksiyalar</p>
+            </div>
+            <div class="prod-actions-stacked">
+              <button class="btn-card-gold" data-open-modal data-grade="Beton M300 (B22.5)">1 klikda xarid qilish</button>
+              <button class="btn-secondary-light" data-open-detail="m300">Batafsil</button>
+            </div>
+          </div>
+
+          <!-- Card M350 -->
+          <div class="product-card">
+            <div>
+              <div class="prod-cube-img-wrapper">
+                <img src="/cubes/cube_m350.png" alt="Beton M350 3D Kubik" class="prod-cube-img">
+              </div>
+              <h3>Beton M350 (B25)</h3>
+              <p>Monolit yopmalar, ustunlar, rostverklar va tayanch konstruksiyalar</p>
+            </div>
+            <div class="prod-actions-stacked">
+              <button class="btn-card-gold" data-open-modal data-grade="Beton M350 (B25)">1 klikda xarid qilish</button>
+              <button class="btn-secondary-light" data-open-detail="m350">Batafsil</button>
+            </div>
+          </div>
+
+          <!-- Card M400 -->
+          <div class="product-card">
+            <div>
+              <div class="prod-cube-img-wrapper">
+                <img src="/cubes/cube_m400.png" alt="Beton M400 3D Kubik" class="prod-cube-img">
+              </div>
+              <h3>Beton M400 (B30)</h3>
+              <p>Ko‘priklar, poydevorlar, ustunlar, gidrotexnik inshootlar</p>
+            </div>
+            <div class="prod-actions-stacked">
+              <button class="btn-card-gold" data-open-modal data-grade="Beton M400 (B30)">1 klikda xarid qilish</button>
+              <button class="btn-secondary-light" data-open-detail="m400">Batafsil</button>
+            </div>
+          </div>
+
+          <!-- Card M450 -->
+          <div class="product-card">
+            <div>
+              <div class="prod-cube-img-wrapper">
+                <img src="/cubes/cube_m450.png" alt="Beton M450 3D Kubik" class="prod-cube-img">
+              </div>
+              <h3>Beton M450 (B35)</h3>
+              <p>To‘g‘onlar, tonnellar, ko‘priklar, o‘ta mustahkam konstruksiyalar</p>
+            </div>
+            <div class="prod-actions-stacked">
+              <button class="btn-card-gold" data-open-modal data-grade="Beton M450 (B35)">1 klikda xarid qilish</button>
+              <button class="btn-secondary-light" data-open-detail="m450">Batafsil</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Concrete Types Grid (Beton Qorishmalarining Turlari) -->
+    <section class="section types-section" id="types" style="background: #ffffff; padding: 5rem 0;">
+      <div class="container container-wide">
+        <div class="section-header text-center" style="margin-bottom: 3.5rem;">
+          <h2 class="section-title" style="font-size: 2.5rem; font-weight: 800; color: #0f172a;">
+            Beton qorishmalarining <span class="blue-text">turlari</span>
+          </h2>
+          <p class="section-subtitle" style="max-width: 680px; margin: 0.75rem auto 0; color: #64748b; font-size: 1.05rem; line-height: 1.5;">
+            Har bir beton turi o'z vazifasiga mos keladi. Qaysi beton to'q, suyuq, harakatchan yoki qattiq ekanini bu yerdan bilib oling
+          </p>
+        </div>
+
+        <div class="types-cards-grid">
+          <!-- Card 1: Tovar betoni -->
+          <div class="product-card">
+            <div>
+              <div class="prod-cube-img-wrapper">
+                <img src="/types/tovar_beton.png" alt="Tovar betoni" class="prod-cube-img">
+              </div>
+              <h3>Tovar betoni</h3>
+              <p><strong>Tavsif:</strong><br>Barcha turdagi qurilish ishlari uchun standart va sifatli tayyor beton aralashmasi.</p>
+            </div>
+            <div class="prod-actions-stacked">
+              <a href="product-details.html?grade=tovar" class="btn-card-gray-full">Batafsil</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Suvga chidamli beton -->
+          <div class="product-card">
+            <div>
+              <div class="prod-cube-img-wrapper">
+                <img src="/types/waterproof_beton.png" alt="Suvga chidamli beton" class="prod-cube-img">
+              </div>
+              <h3>Suvga chidamli beton</h3>
+              <p><strong>Tavsif:</strong><br>Namlik va suvning uzoq ta'siriga chidamli. Podvallar, suv omborlari, basseynlar va tashqi inshootlarda qo'llaniladi</p>
+            </div>
+            <div class="prod-actions-stacked">
+              <a href="product-details.html?grade=waterproof" class="btn-card-gray-full">Batafsil</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Yo'l betoni -->
+          <div class="product-card">
+            <div>
+              <div class="prod-cube-img-wrapper">
+                <img src="/types/road_beton.png" alt="Yo'l betoni" class="prod-cube-img">
+              </div>
+              <h3>Yo'l betoni</h3>
+              <p><strong>Tavsif:</strong><br>Magistral yo'llar, aerodromlar, terminal maydonlari va og'ir yuklamalar uchun.</p>
+            </div>
+            <div class="prod-actions-stacked">
+              <a href="product-details.html?grade=road" class="btn-card-gray-full">Batafsil</a>
+            </div>
+          </div>
+
+          <!-- Card 4: Qum betoni (Peskobeton) -->
+          <div class="product-card">
+            <div>
+              <div class="prod-cube-img-wrapper">
+                <img src="/types/sand_beton.png" alt="Qum betoni (Peskobeton)" class="prod-cube-img">
+              </div>
+              <h3>Qum betoni (Peskobeton)</h3>
+              <p><strong>Tavsif:</strong><br>Mayda fraksiyali qum va sement aralashmasi. Styajka, pollar va ta'mirlash ishlari uchun.</p>
+            </div>
+            <div class="prod-actions-stacked">
+              <a href="product-details.html?grade=sand" class="btn-card-gray-full">Batafsil</a>
+            </div>
+          </div>
+
+          <!-- Card 5: Mayda donali beton -->
+          <div class="product-card">
+            <div>
+              <div class="prod-cube-img-wrapper">
+                <img src="/types/fine_aggregate_beton.png" alt="Mayda donali beton" class="prod-cube-img">
+              </div>
+              <h3>Mayda donali beton</h3>
+              <p><strong>Tavsif:</strong><br>Yirik fraksiyasiz, ingichka va murakkab armaturalangan konstruksiyalar uchun.</p>
+            </div>
+            <div class="prod-actions-stacked">
+              <a href="product-details.html?grade=fine" class="btn-card-gray-full">Batafsil</a>
+            </div>
+          </div>
+
+          <!-- Card 6: Sulfatga chidamli beton -->
+          <div class="product-card">
+            <div>
+              <div class="prod-cube-img-wrapper">
+                <img src="/types/sulfate_beton.png" alt="Sulfatga chidamli beton" class="prod-cube-img">
+              </div>
+              <h3>Sulfatga chidamli beton</h3>
+              <p><strong>Tavsif:</strong><br>Agressiv yerosti suvlari va kimyoviy muhitda ishlatiladigan maxsus beton.</p>
+            </div>
+            <div class="prod-actions-stacked">
+              <a href="product-details.html?grade=sulfate" class="btn-card-gray-full">Batafsil</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Concrete Calculator Section -->
+    <section class="section" id="calculator">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-title">ONLAYN KALKULYATOR</span>
+          <h2 class="section-title">Qancha Beton Kerakligini <span class="blue-text">Aniqlang va Hisoblang</span></h2>
+          <p class="section-subtitle">Konstruksiya o'lchamlarini kiriting, kalkulyator kerakli beton hajmini hamda taxminiy narxni hisoblab beradi.</p>
+        </div>
+
+        <div class="calculator-component">
+          <div class="calc-struct-tabs">
+            <button class="calc-struct-tab active" data-struct="plita">
+              <i data-lucide="square"></i>
+              <span>Plita Poydevor</span>
+            </button>
+            <button class="calc-struct-tab" data-struct="lenta">
+              <i data-lucide="rows"></i>
+              <span>Lenta Poydevor</span>
+            </button>
+            <button class="calc-struct-tab" data-struct="ustun">
+              <i data-lucide="columns"></i>
+              <span>Ustunlar (Kolonna)</span>
+            </button>
+            <button class="calc-struct-tab" data-struct="svaya">
+              <i data-lucide="disc"></i>
+              <span>Svayalar (Ustunlar)</span>
+            </button>
+          </div>
+
+          <div class="calc-body-grid">
+            <div class="calc-inputs-col">
+              <div class="calc-form-group">
+                <div class="calc-label"><span>Eni (m)</span></div>
+                <input type="number" id="calcWidth" class="calc-input" value="10" step="0.5" min="0.5">
+              </div>
+
+              <div class="calc-form-group">
+                <div class="calc-label"><span>Uzunligi (m)</span></div>
+                <input type="number" id="calcLength" class="calc-input" value="10" step="0.5" min="0.5">
+              </div>
+
+              <div class="calc-form-group">
+                <div class="calc-label"><span>Qalinligi / Balandligi (m)</span></div>
+                <input type="number" id="calcThickness" class="calc-input" value="0.2" step="0.05" min="0.05">
+              </div>
+
+              <div class="calc-form-group">
+                <div class="calc-label"><span>Zaxira Hajmi (%)</span></div>
+                <input type="number" id="calcReserve" class="calc-input" value="5" step="1" min="0" max="20">
+              </div>
+
+              <div class="calc-form-group">
+                <div class="calc-label"><span>Beton Markasini Tanlang</span></div>
+                <select id="calcGradeSelect" class="calc-input calc-select">
+                  <option value="M100" data-price="480000">Beton M100 (B7.5) — 480 000 so'm/m³</option>
+                  <option value="M150" data-price="510000">Beton M150 (B12.5) — 510 000 so'm/m³</option>
+                  <option value="M200" data-price="540000" selected>Beton M200 (B15) — 540 000 so'm/m³</option>
+                  <option value="M250" data-price="580000">Beton M250 (B20) — 580 000 so'm/m³</option>
+                  <option value="M300" data-price="620000">Beton M300 (B22.5) — 620 000 so'm/m³</option>
+                  <option value="M350" data-price="660000">Beton M350 (B25) — 660 000 so'm/m³</option>
+                  <option value="M400" data-price="720000">Beton M400 (B30) — 720 000 so'm/m³</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="calc-summary-box">
+              <div>
+                <h3 class="summary-title">Hisoblash Natijalari</h3>
+                
+                <div class="summary-item">
+                  <span>Sof Beton Hajmi:</span>
+                  <strong id="calcResultVolume">20.00 m³</strong>
+                </div>
+
+                <div class="summary-item">
+                  <span>Zaxira Bilan (Hajm):</span>
+                  <strong id="calcResultReserveVol" style="color: var(--emerald-accent);">21.00 m³</strong>
+                </div>
+
+                <div class="summary-item">
+                  <span>Taxminiy Umumiy Og'irligi:</span>
+                  <strong id="calcResultWeight">50.4 t</strong>
+                </div>
+              </div>
+
+              <div>
+                <div class="summary-total-price">
+                  <div class="total-price-label">Taxminiy Narxi</div>
+                  <div class="total-price-val" id="calcResultPrice">11 340 000 so'm</div>
+                </div>
+
+                <button class="btn btn-brand btn-block btn-lg" data-open-modal data-grade="Kalkulyator Buyurtmasi">
+                  <i data-lucide="shopping-cart"></i>
+                  <span>Shu Hajmga Buyurtma Berish</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Factories Viewer Section (Zavodlarimiz) -->
+    <section class="section" id="factories">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-title">ISHLAB CHIQARISH BAZALARI</span>
+          <h2 class="section-title">Avtomatlashtirilgan <span class="green-text">6 Ta Beton Zavodimiz</span></h2>
+          <p class="section-subtitle">Toshkent shahri va viloyati bo'ylab joylashgan zamonaviy zavodlarimiz 24 soat to'xtovsiz yetkazib berish imkonini beradi.</p>
+        </div>
+
+        <div class="factory-viewer">
+          <div class="factory-nav">
+            <button class="factory-tab active" data-factory="sergeli">
+              <span>Sergeli Zavodi</span>
+              <i data-lucide="chevron-right"></i>
+            </button>
+            <button class="factory-tab" data-factory="yunusobod">
+              <span>Yunusobod Zavodi</span>
+              <i data-lucide="chevron-right"></i>
+            </button>
+            <button class="factory-tab" data-factory="yashnobod">
+              <span>Yashnobod Zavodi</span>
+              <i data-lucide="chevron-right"></i>
+            </button>
+            <button class="factory-tab" data-factory="bektemir">
+              <span>Bektemir Zavodi</span>
+              <i data-lucide="chevron-right"></i>
+            </button>
+            <button class="factory-tab" data-factory="zangiota">
+              <span>Zangiota Zavodi</span>
+              <i data-lucide="chevron-right"></i>
+            </button>
+            <button class="factory-tab" data-factory="yangiyol">
+              <span>Yangiyo'l Zavodi</span>
+              <i data-lucide="chevron-right"></i>
+            </button>
+          </div>
+
+          <div class="factory-content-box">
+            <div>
+              <span class="factory-tag" id="facTag">SERGELI TUMANI SANOAT ZONASI</span>
+              <h3 class="factory-title" id="facName">REGION BETON — Sergeli Markaziy Zavodi</h3>
+              <p class="factory-desc" id="facDesc">
+                Germaniyaning Liebherr avtomatlashtirilgan 2 ta aralashtirish liniyasiga ega bosh zavodimiz. Kunlik 3 200 m³ yuqori sifatli beton aralashmasi quvvatiga ega.
+              </p>
+
+              <div class="factory-specs-grid">
+                <div class="spec-item">
+                  <label>Kunlik Quvvat</label>
+                  <strong id="facCapacity">3 200 m³ / kun</strong>
+                </div>
+                <div class="spec-item">
+                  <label>Avtomikserlar</label>
+                  <strong id="facMixers">45 ta Avtomikser</strong>
+                </div>
+                <div class="spec-item">
+                  <label>Manzil</label>
+                  <strong id="facAddress">Sergeli t-ni, Sanoat zona</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="factory-map-container">
+              <iframe id="facMapIframe" src="https://maps.google.com/maps?q=Sergeli+Tashkent&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Laboratory & Quality Control with Custom Image -->
+    <section class="section" style="background: #f8fafc;">
+      <div class="container">
+        <div class="lab-grid">
+          <div>
+            <span class="sub-title">SIFAT NAZORATI</span>
+            <h2 class="section-title">Akkreditatsiyalangan <span class="blue-text">Shaxsiy Laboratoriya</span></h2>
+            <p style="margin-top: 1rem; color: var(--text-muted); font-size: 1.05rem;">
+              Har bir partiya beton mahsulotimiz GOST 26633-2015 hamda Yevropa standartlariga ko'ra sinovdan o'tkaziladi va har bir yuk avtomobiliga sifat pasporti ilova qilinadi.
+            </p>
+
+            <div class="lab-badge-list">
+              <div class="lab-item">
+                <div class="lab-icon"><i data-lucide="check-square"></i></div>
+                <div>
+                  <h4>100% Sertifikatlangan Xomashyo</h4>
+                  <p style="font-size: 0.9rem; color: var(--text-muted);">Ishlatiladigan sement, qum va chaqiq toshlar qat'iy nazoratdan o'tkaziladi.</p>
+                </div>
+              </div>
+
+              <div class="lab-item">
+                <div class="lab-icon"><i data-lucide="gauge"></i></div>
+                <div>
+                  <h4>28 Kunlik Siqilish Sinovlari</h4>
+                  <p style="font-size: 0.9rem; color: var(--text-muted);">Gidravlik preslarda namunalarni siqilishga chidamliligi doimiy tekshiriladi.</p>
+                </div>
+              </div>
+
+              <div class="lab-item">
+                <div class="lab-icon"><i data-lucide="file-text"></i></div>
+                <div>
+                  <h4>Rasmiy Sifat Pasporti</h4>
+                  <p style="font-size: 0.9rem; color: var(--text-muted);">Har bir mikserga beton markasi, hajmi va laboratoriya muhri tushirilgan pasport beriladi.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="laboratory.html" class="btn btn-blue">
+              <span>Laboratoriya Haqida Batafsil</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <div>
+            <img src="/laboratory.jpg" alt="REGION BETON Laboratoriyasi" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Consultation Section -->
+    <section class="section" style="background: var(--bg-gradient-dark); color: #ffffff;">
+      <div class="container" style="max-width: 800px; text-align: center;">
+        <span class="sub-title" style="color: var(--emerald-accent);">MUTAXASSIS KONSULTATSIYASI</span>
+        <h2 class="section-title" style="color: #ffffff; margin-bottom: 1rem;">Beton Buyurtma Qilish Uchun <span class="gradient-text">Ariza Qoldiring</span></h2>
+        <p style="color: #94a3b8; font-size: 1.1rem; margin-bottom: 2.5rem;">
+          Mutaxassisimiz siz bilan 5 daqiqada bog'lanadi, aniq hajmni hisoblab beradi va eng maqbul narxlarni taklif qiladi.
+        </p>
+
+        <form id="quickOrderForm" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem;">
+          <input type="text" placeholder="Ismingiz" class="calc-input" required style="background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.2); color: #ffffff;">
+          <input type="tel" placeholder="+998 (__) ___-__-__" class="calc-input" required style="background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.2); color: #ffffff;">
+          <select class="calc-input calc-select" style="grid-column: 1 / -1; background-color: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.2); color: #ffffff;">
+            <option value="M200" style="color: #000;">Beton M200 (B15)</option>
+            <option value="M250" style="color: #000;">Beton M250 (B20)</option>
+            <option value="M300" style="color: #000;">Beton M300 (B22.5)</option>
+            <option value="M350" style="color: #000;">Beton M350 (B25)</option>
+            <option value="M400" style="color: #000;">Beton M400 (B30)</option>
+          </select>
+          <button type="submit" class="btn btn-brand btn-lg btn-block" style="grid-column: 1 / -1;">
+            <i data-lucide="send"></i>
+            <span>Ariza Yuborish</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="index.html" class="logo-brand">
+              <div class="logo-icon">
+                <i data-lucide="layers"></i>
+              </div>
+              <div class="logo-text">
+                <span class="brand-name">REGION <span class="green-text">BETON</span></span>
+                <span class="brand-tag">BETON ZAVODLAR TARMOQ</span>
+              </div>
+            </a>
+            <p class="footer-brand-p">
+              2015-yildan buyon Toshkent shahri va viloyatida eng yuqori sifatli sertifikatlangan beton ishlab chiqarish va 24/7 tezkor yetkazib berish bo'yicha yetakchi kompaniya.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Navigatsiya</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Bosh sahifa</a></li>
+              <li><a href="about.html">Biz haqimizda</a></li>
+              <li><a href="products.html">Mahsulotlar katalogi</a></li>
+              <li><a href="calculator.html">Onlayn kalkulyator</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Bo'limlar</h4>
+            <ul class="footer-links">
+              <li><a href="factories.html">Zavodlarimiz</a></li>
+              <li><a href="laboratory.html">Laboratoriya</a></li>
+              <li><a href="projects.html">Bajarilgan loyihalar</a></li>
+              <li><a href="contacts.html">Kontaktlar</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Aloqa Ma'lumotlari</h4>
+            <ul class="footer-links">
+              <li style="color: #ffffff; font-weight: 700;">+998 (71) 200-70-70</li>
+              <li style="color: #ffffff; font-weight: 700;">+998 (90) 123-45-67</li>
+              <li>Toshkent sh., Sergeli t-ni, Sanoat zonasi</li>
+              <li>Ish vaqti: 24/7 Uzluksiz</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>&copy; 2026 REGION BETON. Barcha huquqlar himoyalangan.</span>
+          <span>Sifatli beton — mustahkam kelajak poydevori!</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Interactive Callback Modal -->
+    <div class="modal-overlay" id="callbackModal">
+      <div class="modal-card">
+        <button class="modal-close" id="closeCallbackModal"><i data-lucide="x"></i></button>
+        <div class="modal-header">
+          <h3 id="modalTitle">Qo'ng'iroqqa Buyurtma Berish</h3>
+          <p>Ma'lumotlaringizni kiriting, 5 daqiqada siz bilan bog'lanamiz!</p>
+        </div>
+        <form id="modalOrderForm">
+          <input type="hidden" id="modalGradeField" value="">
+          <div class="calc-form-group">
+            <input type="text" placeholder="Ismingiz" class="calc-input" required>
+          </div>
+          <div class="calc-form-group">
+            <input type="tel" placeholder="Telefon raqamingiz (+998)" class="calc-input" required>
+          </div>
+          <div class="calc-form-group">
+            <input type="number" placeholder="Kerakli hajm (m³)" class="calc-input">
+          </div>
+          <button type="submit" class="btn btn-brand btn-block btn-lg">
+            <span>Buyurtma Berish</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Product Detail Specs Modal -->
+    <div class="modal-overlay" id="productDetailModal">
+      <div class="modal-card modal-card-wide">
+        <button class="modal-close" id="closeDetailModal"><i data-lucide="x"></i></button>
+        <div class="product-detail-layout">
+          <div class="detail-cube-box">
+            <img id="detailCubeImg" src="/cubes/cube_m100.png" alt="Beton markasi 3D">
+            <span class="detail-badge" id="detailGostBadge">GOST 26633-2015 PASPORTI</span>
+          </div>
+          <div class="detail-info-box">
+            <span class="sub-title">TEXNIK XARAKTERISTIKALAR</span>
+            <h2 id="detailTitle">Beton M100 (B7,5)</h2>
+            <p id="detailDesc">Poydevor tagi tayyorgarlik ishlari va yo'laklar uchun sertifikatlangan beton aralashmasi.</p>
+
+            <div class="detail-specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Mustahkamlik Sinfi:</span>
+                <strong id="specBClass">B7.5 (98 kgf/cm²)</strong>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Ayozga Chidamliligi:</span>
+                <strong id="specFrost">F50 - F75</strong>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Suv O'tkazmasligi:</span>
+                <strong id="specWater">W2</strong>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Harakatlanuvchanlik:</span>
+                <strong id="specMobility">P3 (10-15 cm)</strong>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Zichlik:</span>
+                <strong id="specDensity">2 350 kg/m³</strong>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Sertifikatsiya:</span>
+                <strong>GOST Pasporti</strong>
+              </div>
+            </div>
+
+            <div class="detail-uses-box">
+              <h4>Qo'llaniladigan Sohalar:</h4>
+              <ul class="detail-uses-list" id="detailUsesList">
+                <li>Poydevor tagi tayyorlov</li>
+                <li>Yo'laklar tayyorlovi</li>
+              </ul>
+            </div>
+
+            <div id="detailRecipeBox" style="margin-top: 1rem; margin-bottom: 1.2rem;">
+              <h4 style="font-size: 0.95rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Tarkibi (1 m³ uchun):</h4>
+              <div id="detailRecipeItems" style="display: flex; flex-wrap: wrap; gap: 0.5rem;"></div>
+            </div>
+
+            <div class="detail-actions" style="display: flex; gap: 0.8rem; align-items: center;">
+              <button class="btn btn-brand btn-lg" id="detailBuyBtn" style="flex: 1;">
+                <span>1 Klikda Xarid Qilish</span>
+              </button>
+              <a href="#" id="detailFullPageLink" class="btn btn-outline-dark btn-lg" style="white-space: nowrap;">
+                <span>To'liq Sahifa</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

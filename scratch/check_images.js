@@ -1,0 +1,12 @@
+const fs = require('fs');
+const path = require('path');
+
+const files = fs.readdirSync('.').filter(f => f.endsWith('.html'));
+files.forEach(f => {
+  const content = fs.readFileSync(f, 'utf8');
+  const matches = content.match(/src="[^"]+"/g);
+  console.log('--- ' + f + ' ---');
+  if (matches) {
+    matches.forEach(m => console.log('  ' + m));
+  }
+});
