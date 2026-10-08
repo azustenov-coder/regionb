@@ -2847,7 +2847,7 @@ a[href^="tel:"],
 }
 
 .gold-gradient-text {
-  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  background: linear-gradient(135deg, #38bdf8 0%, #34d399 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline;
@@ -2905,12 +2905,12 @@ a[href^="tel:"],
 
 .dark-feature-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(245, 158, 11, 0.4);
-  box-shadow: 0 20px 45px -10px rgba(245, 158, 11, 0.18);
+  border-color: rgba(14, 165, 233, 0.4);
+  box-shadow: 0 20px 45px -10px rgba(16, 185, 129, 0.25);
 }
 
 .dark-icon-box {
-  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+  background: var(--brand-gradient);
   color: #ffffff;
   width: 58px;
   height: 58px;
@@ -2921,7 +2921,7 @@ a[href^="tel:"],
   font-size: 1.5rem;
   margin-bottom: 1.8rem;
   flex-shrink: 0;
-  box-shadow: 0 8px 20px rgba(217, 119, 6, 0.35);
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.35);
 }
 
 .dark-feature-card h3 {
@@ -2987,7 +2987,9 @@ a[href^="tel:"],
   font-family: var(--font-heading);
   font-size: clamp(2.4rem, 3.5vw, 3.4rem);
   font-weight: 800;
-  color: #b45309;
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   line-height: 1.1;
   margin-bottom: 0.6rem;
 }
