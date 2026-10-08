@@ -98,6 +98,25 @@ document.addEventListener('DOMContentLoaded', () => {
     document.head.appendChild(s);
   }
 
+  // Continuously suppress Google Translate top iframe banner and body shift
+  const suppressGoogleTopBar = () => {
+    document.body.style.top = '0px';
+    document.body.style.position = 'static';
+    document.body.style.marginTop = '0px';
+    document.documentElement.style.top = '0px';
+
+    const frames = document.querySelectorAll('iframe.goog-te-banner-frame, .goog-te-banner-frame, iframe[src*="translate"]');
+    frames.forEach(frame => {
+      try {
+        frame.style.display = 'none';
+        frame.style.visibility = 'hidden';
+        if (frame.parentNode) frame.parentNode.removeChild(frame);
+      } catch (err) {}
+    });
+  };
+
+  setInterval(suppressGoogleTopBar, 150);
+
   // 1. Mobile Navigation Toggle
   const mobileToggle = document.getElementById('mobileToggle');
   const mainNav = document.getElementById('mainNav');

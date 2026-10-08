@@ -2718,6 +2718,14 @@ a[href^="tel:"],
   margin-bottom: 2rem;
 }
 
+@media (max-width: 1080px) {
+  .ingredients-grid-top,
+  .ingredients-grid-bottom {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
 .ingredient-card {
   background: #ffffff;
   border: 1px solid #e2e8f0;
@@ -3032,6 +3040,7 @@ a[href^="tel:"],
 /* ==========================================================================
    GOOGLE TRANSLATE SILENT INTEGRATION OVERRIDES
    ========================================================================== */
+iframe.goog-te-banner-frame,
 .goog-te-banner-frame,
 .goog-te-balloon-frame,
 #goog-gt-tt,
@@ -3039,15 +3048,23 @@ a[href^="tel:"],
 .goog-te-gadget,
 .goog-te-gadget-icon,
 .goog-te-menu-frame,
-.goog-te-menu2 {
+.goog-te-menu2,
+div.skiptranslate > iframe,
+iframe[id*="goog"],
+iframe[src*="translate"],
+.goog-te-banner {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  pointer-events: none !important;
 }
 
-body {
+body, html {
   top: 0px !important;
   position: static !important;
+  margin-top: 0px !important;
 }
 
 .goog-tooltip,
@@ -3061,6 +3078,7 @@ body {
   border: none !important;
 }
 
-#google_translate_element {
+#google_translate_element,
+.skiptranslate {
   display: none !important;
 }
