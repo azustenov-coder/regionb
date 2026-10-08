@@ -3029,3 +3029,38 @@ a[href^="tel:"],
   }
 }
 
+/* ==========================================================================
+   GOOGLE TRANSLATE SILENT INTEGRATION OVERRIDES
+   ========================================================================== */
+.goog-te-banner-frame,
+.goog-te-balloon-frame,
+#goog-gt-tt,
+.goog-te-spinner-pos,
+.goog-te-gadget,
+.goog-te-gadget-icon,
+.goog-te-menu-frame,
+.goog-te-menu2 {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+body {
+  top: 0px !important;
+  position: static !important;
+}
+
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+#google_translate_element {
+  display: none !important;
+}

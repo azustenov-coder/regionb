@@ -5,6 +5,99 @@ import { createIcons, icons } from 'lucide';
 createIcons({ icons });
 
 document.addEventListener('DOMContentLoaded', () => {
+  // 0. Dynamic Multi-Language Switcher (UZ, RU, EN)
+  const langLinks = document.querySelectorAll('.lang-link');
+  
+  const setCookie = (name, value, days = 365) => {
+    const expires = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/';
+    const domainParts = window.location.hostname.split('.');
+    if (domainParts.length > 1) {
+      const rootDomain = domainParts.slice(-2).join('.');
+      document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/; domain=' + rootDomain;
+    }
+  };
+
+  const getCookie = (name) => {
+    return document.cookie.split('; ').reduce((r, v) => {
+      const parts = v.split('=');
+      return parts[0] === name ? decodeURIComponent(parts[1]) : r;
+    }, '');
+  };
+
+  const getCurrentLang = () => {
+    const saved = localStorage.getItem('site_lang');
+    if (saved) return saved.toLowerCase();
+    const goog = getCookie('googtrans');
+    if (goog) {
+      const target = goog.split('/').pop();
+      if (target) return target.toLowerCase();
+    }
+    return 'uz';
+  };
+
+  const updateLangUI = (currentLang) => {
+    langLinks.forEach(link => {
+      const lang = (link.getAttribute('data-lang') || link.innerText).toLowerCase();
+      if (lang === currentLang) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  };
+
+  const switchLanguage = (targetLang) => {
+    const current = getCurrentLang();
+    if (current === targetLang && targetLang === 'uz' && !getCookie('googtrans')) return;
+
+    localStorage.setItem('site_lang', targetLang);
+
+    if (targetLang === 'uz') {
+      setCookie('googtrans', '/uz/uz');
+      document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + window.location.hostname;
+    } else {
+      setCookie('googtrans', `/uz/${targetLang}`);
+    }
+
+    updateLangUI(targetLang);
+    window.location.reload();
+  };
+
+  langLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetLang = (link.getAttribute('data-lang') || link.innerText).toLowerCase();
+      switchLanguage(targetLang);
+    });
+  });
+
+  const initialLang = getCurrentLang();
+  updateLangUI(initialLang);
+
+  if (!document.getElementById('google_translate_element')) {
+    const gDiv = document.createElement('div');
+    gDiv.id = 'google_translate_element';
+    gDiv.style.display = 'none';
+    document.body.appendChild(gDiv);
+  }
+
+  window.googleTranslateElementInit = function() {
+    new window.google.translate.TranslateElement({
+      pageLanguage: 'uz',
+      includedLanguages: 'uz,ru,en',
+      autoDisplay: false
+    }, 'google_translate_element');
+  };
+
+  if (!document.getElementById('google-translate-script')) {
+    const s = document.createElement('script');
+    s.id = 'google-translate-script';
+    s.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    document.head.appendChild(s);
+  }
+
   // 1. Mobile Navigation Toggle
   const mobileToggle = document.getElementById('mobileToggle');
   const mainNav = document.getElementById('mainNav');
